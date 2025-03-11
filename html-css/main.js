@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // フォーム要素の取得
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const form = document.getElementById("userForm");
-  const clearButton = document.getElementById("clearStorage");
+  const nameInput = document.getElementById("js-email");
+  const emailInput = document.getElementById("js-password");
+  const form = document.getElementById("js-form");
 
   // 以前のデータがあればフォームに復元
   if (localStorage.getItem("userData")) {
