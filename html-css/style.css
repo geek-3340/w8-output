@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+    background: #333;
+    color: #fff;
+}
+
+.flex{
+    width: 100vw;
+}
+.flex-headline{}
+.flex-container{}
+.flex-item{}
+.flex-1{}
+.flex-2{}
+.flex-3{}
