@@ -25,12 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault(); // フォーム送信を防止
     alert("データが保存されました！");
   });
-
-  // ローカルストレージをクリアするボタン
-  clearButton.addEventListener("click", () => {
-    localStorage.removeItem("userData");
-    nameInput.value = "";
-    emailInput.value = "";
-    alert("保存されたデータを削除しました。");
-  });
+  
 });
