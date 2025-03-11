@@ -122,6 +122,8 @@ input:-webkit-autofill:active {
     text-align: center;
     font-size: 16px;
     font-family: inherit;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff; /* iOS Safari対策 */
     caret-color: #fff; /* キャレットの色を白に設定 */
 }
 
@@ -146,11 +148,6 @@ input:-webkit-autofill:active {
     .form-table input {
         width: 250px;
         height: 40px;
-        background: #666;
-        text-align: center;
-        font-size: 16px;
-        font-family: inherit;
-        caret-color: #fff; /* キャレットの色を白に設定 */
     }
     
     .button {
