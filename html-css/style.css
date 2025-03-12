@@ -1,4 +1,6 @@
-/* base */
+/* 
+base
+ */
 
 * {
     box-sizing: border-box;
@@ -29,6 +31,7 @@ input:focus {
     outline: none;
 }
 
+/* 入力時、予測変換反映時のデザイン崩れ防止 */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -37,7 +40,9 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #fff !important;
 }
 
-/* section */
+/* 
+section
+ */
 
 .section {
     width: 100vw;
@@ -48,7 +53,9 @@ input:-webkit-autofill:active {
     margin: 20px;
 }
 
-/* flex */
+/* 
+flex
+ */
 
 .flex-description {
     margin: 60px 0 20px;
@@ -84,7 +91,9 @@ input:-webkit-autofill:active {
     width: 14.66%;
 }
 
-/* form */
+/* 
+form
+ */
 
 .section-form {
     background: #444;
@@ -123,8 +132,10 @@ input:-webkit-autofill:active {
     font-size: 16px;
     font-family: inherit;
     color: #fff !important;
-    -webkit-text-fill-color: #fff; /* iOS Safari対策 */
-    caret-color: #fff; /* キャレットの色を白に設定 */
+    -webkit-text-fill-color: #fff;
+    /* iOS Safari対策 */
+    caret-color: #fff;
+    /* テキスト入力時のライン（キャレット）の色を白に設定 */
 }
 
 .button {
@@ -139,17 +150,19 @@ input:-webkit-autofill:active {
     transition: 0.3s;
 }
 
+/* レスポンシブ */
 @media screen and (max-width:768px) {
+
     .form-table th,
     .form-table td {
         font-size: 16px;
     }
-    
+
     .form-table input {
         width: 250px;
         height: 40px;
     }
-    
+
     .button {
         font-size: 16px;
         width: 250px;
@@ -157,6 +170,7 @@ input:-webkit-autofill:active {
     }
 }
 
+/* ＰＣ用スタイル */
 @media screen and (hover:hover) {
     .button:hover {
         background: #048;
@@ -164,6 +178,7 @@ input:-webkit-autofill:active {
     }
 }
 
+/* スマホ用スタイル（hoverスタイルを解除） */
 @media screen and (hover:none) {
     .button:hover {
         background: inherit;
