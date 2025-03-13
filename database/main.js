@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       email: emailInput.value
     };
     localStorage.setItem("userData", JSON.stringify(userData)); // 入力内容を保存
-    alert("データが保存されました！");
+    alert("Data saved!!");
   });
 
 });
